@@ -3,8 +3,8 @@
 Este é o repositório da disciplina **Programação Mobile**.
 
 ## 👨‍💻 Desenvolvedor
-- Nome: João Pedro Gonçalves Holanda
-- RA: 24026658
+- Nome: Pedro Augusto da Silva Macedo
+- RA: 21010681
 - Curso: ADS – 3º Semestre
 
 ## 📅 Data
