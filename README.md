@@ -3,7 +3,8 @@
 Este é o repositório da disciplina **Programação Mobile**.
 
 ## 👨‍💻 Desenvolvedor
-- Nome: Luiz Eduardo Souza Rocha   
+- Nome: Luiz Eduardo Souza Rocha
+- 
 - RA: 24026664
 - Curso: ADS – 3º Semestre
 
