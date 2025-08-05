@@ -1,10 +1,10 @@
-# 📱 Programacao-Mobile-ADS-3
+# 📱 Programação Mobile ADS 3
 
 Este é o repositório da disciplina **Programação Mobile**.
 
 ## 👨‍💻 Desenvolvedor
-- Nome: Rodrigo da Rosa
-- RA: xxxxxxx
+- Nome: Gustavo Roberto
+- RA: 24026770
 - Curso: ADS – 3º Semestre
 
 ## 📅 Data
