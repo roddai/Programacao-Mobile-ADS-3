@@ -3,8 +3,8 @@
 Este é o repositório da disciplina **Programação Mobile**.
 
 ## 👨‍💻 Desenvolvedor
-- Nome: Rodrigo da Rosa
-- RA: xxxxxxx
+- Nome: Renan Damprelli Cardoso da Silva
+- RA: 24026623
 - Curso: ADS – 3º Semestre
 
 ## 📅 Data
