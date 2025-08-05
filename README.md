@@ -3,8 +3,8 @@
 Este é o repositório da disciplina **Programação Mobile**.
 
 ## 👨‍💻 Desenvolvedor
-- Nome: Pedro Augusto da Silva Macedo
-- RA: 21010681
+- Nome: Gustavo Henrique Da Silva Santos
+- RA: 24026874
 - Curso: ADS – 3º Semestre
 
 ## 📅 Data
@@ -20,4 +20,6 @@ Este é o repositório da disciplina **Programação Mobile**.
 ## 📦 APK
 O APK de projetos pode ser encontrado na pasta `app/build/outputs/apk/debug/`
 
+
+## EU VEJO VOCÊ :)
 ---
