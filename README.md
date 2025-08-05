@@ -3,7 +3,7 @@
 Este é o repositório da disciplina **Programação Mobile**.
 
 ## 👨‍💻 Desenvolvedor
-- Nome: Pedro Augusto da Silva Macedo
+- Nome: Pedro Augusto da Silva Macedo 
 - RA: 21010681
 - Curso: ADS – 3º Semestre
 
