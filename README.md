@@ -21,5 +21,7 @@ Este é o repositório da disciplina **Programação Mobile**.
 O APK de projetos pode ser encontrado na pasta `app/build/outputs/apk/debug/`
 
 
-## EU VEJO VOCÊ :)
+## amo Gardevoir
+![OSK](https://github.com/user-attachments/assets/0b4573cb-664c-4ebb-ad7a-1bbdad8393e8)
 ---
+
