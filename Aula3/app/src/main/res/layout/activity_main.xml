@@ -68,4 +68,13 @@
         android:backgroundTint="#015201"
         android:text="Comprar" />
 
+    <TextView
+        android:id="@+id/textinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_marginBottom="-110dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
 </RelativeLayout>
