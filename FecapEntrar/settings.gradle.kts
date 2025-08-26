@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "EU ODEIO JAVAAAA"
+rootProject.name = "FecapEntrar"
+include(":app")
 include(":app")
