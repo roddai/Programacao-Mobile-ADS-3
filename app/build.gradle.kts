@@ -3,11 +3,8 @@ plugins {
 }
 
 android {
-    namespace = "com.example.java_aula_mobile"
-    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.java_aula_mobile"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
