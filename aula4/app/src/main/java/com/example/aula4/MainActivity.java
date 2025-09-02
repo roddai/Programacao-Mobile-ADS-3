@@ -10,8 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+   //declara os componentes presentes a tela
     private EditText editNome;
     private Button btnEnviar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
