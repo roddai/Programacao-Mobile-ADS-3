@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TesteA8</string>
+    <string name="main_title">Tela Inicial</string>
+    <string name="btn_proximo">Próximo</string>
+    <string name="form_title">Formulário</string>
+    <string name="nome_hint">Digite seu nome</string>
+    <string name="idade_hint">Digite sua idade</string>
+    <string name="checkbox_opcao1">Opção 1</string>
+    <string name="checkbox_opcao2">Opção 2</string>
+    <string name="radio_sim">Sim</string>
+    <string name="radio_nao">Não</string>
+    <string name="spinner_label">Escolha uma cor</string>
+    <string name="avaliacao_label">Avalie nosso app</string>
+    <string name="resultado_title">Resultado</string>
+    <string name="carregar_foto">Carregar Foto</string>
+    <string name="btn_voltar">Voltar</string>
+</resources>

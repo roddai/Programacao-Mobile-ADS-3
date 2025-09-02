@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/descricaoQuiz3"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:text="c) Prefiro observar ou ficar sozinho até me sentir mais à vontade."
+        app:layout_constraintEnd_toEndOf="@+id/descricaoQuiz2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descricaoQuiz2"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoQuiz2" />
+
+    <TextView
+        android:id="@+id/TituloQuiz1"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:text="1. Como você reage em ambientes sociais desconhecidos? "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/TituloQuiz3"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="352dp"
+        android:text="3. Como você lida com opiniões diferentes das suas?"
+        app:layout_constraintEnd_toEndOf="@+id/TituloQuiz2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TituloQuiz2"
+        app:layout_constraintTop_toBottomOf="@+id/TituloQuiz1" />
+
+    <TextView
+        android:id="@+id/TituloQuiz2"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="156dp"
+        android:text="2. Quando você tem uma tarefa importante para fazer, o que costuma acontecer?"
+        app:layout_constraintEnd_toEndOf="@+id/TituloQuiz1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TituloQuiz1"
+        app:layout_constraintTop_toBottomOf="@+id/TituloQuiz1" />
+
+    <TextView
+        android:id="@+id/DescricaoQuiz1"
+        android:layout_width="297dp"
+        android:layout_height="1dp"
+        android:text="a) Me sinto energizado e gosto de fazer novas conexões. b) Fico um pouco desconfortável, mas tento interagir. c) Prefiro observar ou ficar sozinho até me sentir mais à vontade."
+        app:layout_constraintEnd_toEndOf="@+id/TituloQuiz1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TituloQuiz1"
+        app:layout_constraintTop_toBottomOf="@+id/TituloQuiz1" />
+
+    <TextView
+        android:id="@+id/descricaoQuiz"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:text="a) Me sinto energizado e gosto de fazer novas conexões."
+        app:layout_constraintEnd_toEndOf="@+id/TituloQuiz1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/TituloQuiz1"
+        app:layout_constraintTop_toBottomOf="@+id/TituloQuiz1" />
+
+    <TextView
+        android:id="@+id/descricaoQuiz2"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:text="b) Fico um pouco desconfortável, mas tento interagir."
+        app:layout_constraintEnd_toEndOf="@+id/descricaoQuiz"
+        app:layout_constraintStart_toStartOf="@+id/descricaoQuiz"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoQuiz" />
+
+    <TextView
+        android:id="@+id/descricaoQuiz7"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:text="a) Planejo bem e sigo o plano."
+        app:layout_constraintEnd_toEndOf="@+id/TituloQuiz2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TituloQuiz2"
+        app:layout_constraintTop_toBottomOf="@+id/TituloQuiz2" />
+
+    <TextView
+        android:id="@+id/descricaoQuiz8"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:text="c) Deixo para a última hora ou esqueço."
+        app:layout_constraintEnd_toEndOf="@+id/descricaoQuiz9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descricaoQuiz9"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoQuiz9" />
+
+    <TextView
+        android:id="@+id/descricaoQuiz10"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:text="a) Gosto de ouvir e entender outros pontos de vista."
+        app:layout_constraintEnd_toEndOf="@+id/TituloQuiz3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TituloQuiz3"
+        app:layout_constraintTop_toBottomOf="@+id/TituloQuiz3" />
+
+    <TextView
+        android:id="@+id/descricaoQuiz11"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:text="b) Depende da situação, às vezes discuto, às vezes escuto."
+        app:layout_constraintEnd_toEndOf="@+id/descricaoQuiz10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descricaoQuiz10"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoQuiz10" />
+
+    <TextView
+        android:id="@+id/descricaoQuiz12"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:text="c) Tenho dificuldade em aceitar opiniões que discordam da minha."
+        app:layout_constraintEnd_toEndOf="@+id/descricaoQuiz11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descricaoQuiz11"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoQuiz11" />
+
+    <TextView
+        android:id="@+id/descricaoQuiz9"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:text="b) Tento organizar, mas às vezes me perco. xões."
+        app:layout_constraintEnd_toEndOf="@+id/descricaoQuiz7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descricaoQuiz7"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoQuiz7" />
+
+    <EditText
+        android:id="@+id/Resposta1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/Resposta2"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/Resposta3"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/BotaoResultado"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/Quiz"
+        android:layout_width="78dp"
+        android:layout_height="33dp"
+        android:text="Quiz"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Resposta:"
+        app:layout_constraintStart_toStartOf="@+id/descricaoQuiz3"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoQuiz3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Resposta:"
+        app:layout_constraintStart_toStartOf="@+id/descricaoQuiz8"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoQuiz8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Resposta:"
+        app:layout_constraintStart_toStartOf="@+id/descricaoQuiz12"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoQuiz12" />
+</androidx.constraintlayout.widget.ConstraintLayout>
