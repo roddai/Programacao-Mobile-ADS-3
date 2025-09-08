@@ -1,4 +1,3 @@
----
 # 📱 Programacao-Mobile-ADS-3
 
 Este é o repositório da disciplina **Programação Mobile**.
