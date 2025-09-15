@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "java_aula_mobile"
+rootProject.name = "atividadedopetluiz"
 include(":app")
+ 
