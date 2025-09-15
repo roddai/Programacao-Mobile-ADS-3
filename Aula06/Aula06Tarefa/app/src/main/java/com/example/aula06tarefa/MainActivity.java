@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
         buttonCaes1.setOnClickListener(v -> abrirDetalhes(cao1, R.drawable.pet1));
         buttonCaes2.setOnClickListener(v -> abrirDetalhes(cao2, R.drawable.pet2));
-        buttonCaes3.setOnClickListener(v -> abrirDetalhes(cao3, R.drawable.pet6));
+        buttonCaes3.setOnClickListener(v -> abrirDetalhes(cao3, R.drawable.pet3));
 
-        buttonGatos1.setOnClickListener(v -> abrirDetalhes(gato1, R.drawable.pet3));
+        buttonGatos1.setOnClickListener(v -> abrirDetalhes(gato1, R.drawable.pet6));
         buttonGatos2.setOnClickListener(v -> abrirDetalhes(gato2, R.drawable.pet4));
         buttonGatos3.setOnClickListener(v -> abrirDetalhes(gato3, R.drawable.pet5));
     }
