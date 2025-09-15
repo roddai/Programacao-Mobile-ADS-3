@@ -2,46 +2,34 @@ package com.example.java_aula_mobile;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
 
-    EditText editPeso, editAltura;
-    Button btnCalcular;
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editPeso = findViewById(R.id.editPeso);
-        editAltura = findViewById(R.id.editAltura);
-        btnCalcular = findViewById(R.id.btnCalcular);
+        Pet thug = new Pet("Thug", "Caramelo", "Sem raça definida", 6, "20 de julho", R.drawable.thug, "Macho");
+        Pet boris = new Pet("Boris", "Preto e Marrom", "Sem raça definida", 1, "10 de julho", R.drawable.boris, "Macho");
+        Pet amora = new Pet("Amora", "Pretusca", "Sem raça definida", 3, "5 de janeiro", R.drawable.amora, "Fêmea");
 
-        btnCalcular.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                double peso = Double.parseDouble(editPeso.getText().toString());
-                double altura = Double.parseDouble(editAltura.getText().toString());
-                double imc = peso / (altura * altura);
+        Button btnThug = findViewById(R.id.btnThug);
+        btnThug.setOnClickListener(v -> irParaDetalhes(thug));
 
-                Intent intent;
-                if (imc < 18.5) {
-                    intent = new Intent(MainActivity.this, ResultadoAbaixoDoPesoActivity.class);
-                } else if (imc < 25) {
-                    intent = new Intent(MainActivity.this, ResultadoNormalActivity.class);
-                } else if (imc < 30) {
-                    intent = new Intent(MainActivity.this, ResultadoSobrepesoActivity.class);
-                } else if (imc < 35) {
-                    intent = new Intent(MainActivity.this, ResultadoObesidadeClasse1Activity.class);
-                } else {
-                    intent = new Intent(MainActivity.this, ResultadoObesidadeClasse2Activity.class);
-                }
-                startActivity(intent);
-            }
-        });
+        Button btnBoris = findViewById(R.id.btnBoris);
+        btnBoris.setOnClickListener(v -> irParaDetalhes(boris));
+
+        Button btnAmora = findViewById(R.id.btnAmora);
+        btnAmora.setOnClickListener(v -> irParaDetalhes(amora));
+    }
+
+    private void irParaDetalhes(Pet pet) {
+        Intent intent = new Intent(this, DetalhesPetActivity.class);
+        intent.putExtra("pet", pet);
+        startActivity(intent);
     }
 }
