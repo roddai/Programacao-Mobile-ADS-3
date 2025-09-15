@@ -3,8 +3,8 @@
 Este é o repositório da disciplina **Programação Mobile**.
 
 ## 👨‍💻 Desenvolvedor
-- Nome: Rodrigo da Rosa
-- RA: xxxxxxxxxxxxx
+- Nome: Kauã Daniel
+- RA: 24026846
 - Curso: ADS – 3º Semestre
 
 ## 📅 Data
