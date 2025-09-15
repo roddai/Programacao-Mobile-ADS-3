@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JoKenPo"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/imgMaquina"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        tools:srcCompat="@drawable/maquina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMaquina"
+        android:textSize="30dp"
+        android:layout_marginTop="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgPedra"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/pedra"
+        app:layout_constraintTop_toBottomOf="@id/textResultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgPapel"
+        android:layout_marginTop="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgPapel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/papel"
+        android:contentDescription="Papel"
+        app:layout_constraintTop_toBottomOf="@id/textResultado"
+        app:layout_constraintStart_toEndOf="@id/imgPedra"
+        app:layout_constraintEnd_toStartOf="@id/imgTesoura"
+        android:layout_marginTop="12dp"/>
+
+    <ImageView
+        android:id="@+id/imgTesoura"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/tesoura"
+        android:contentDescription="Tesoura"
+        app:layout_constraintTop_toBottomOf="@id/textResultado"
+        app:layout_constraintStart_toEndOf="@id/imgPapel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
