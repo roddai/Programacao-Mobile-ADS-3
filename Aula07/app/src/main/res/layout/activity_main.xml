@@ -47,9 +47,9 @@
         android:id="@+id/imagePapel"
         android:layout_width="88dp"
         android:layout_height="97dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="232dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/papel" />
