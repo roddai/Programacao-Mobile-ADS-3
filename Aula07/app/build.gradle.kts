@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.joken_po"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.joken_po"
