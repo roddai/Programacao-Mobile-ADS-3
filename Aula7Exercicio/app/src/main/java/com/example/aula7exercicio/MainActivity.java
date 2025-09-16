@@ -14,7 +14,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView maquina, pedra, papel, tesoura;
+    ImageView escolhamaquina, pedra, papel, tesoura, escolhausuario, fotoperfil, mulher, homem;
 
     TextView Resultado;
 
@@ -23,19 +23,51 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        maquina = findViewById(R.id.maquina);
+        escolhamaquina = findViewById(R.id.escolhamaquina);
         pedra = findViewById(R.id.pedra);
         papel = findViewById(R.id.papel);
         tesoura = findViewById(R.id.tesoura);
+        escolhausuario = findViewById(R.id.escolhausuario);
+        fotoperfil = findViewById(R.id.fotoperfil);
+        mulher = findViewById(R.id.mulher);
+        homem = findViewById(R.id.homem);
 
         Resultado  = findViewById(R.id.Resultado);
 
         pedra.setOnClickListener(v -> jogar("pedra"));
         papel.setOnClickListener(v -> jogar("papel"));
         tesoura.setOnClickListener(v -> jogar("tesoura"));
+
+        mulher.setOnClickListener(v -> definirPerfil("mulher"));
+        homem.setOnClickListener(v -> definirPerfil("homem"));
+    }
+
+    public void definirPerfil (String genero){
+
+        switch (genero){
+            case "homem":
+                fotoperfil.setImageResource(R.drawable.usuario_masc);
+                break;
+            case "mulher":
+                fotoperfil.setImageResource(R.drawable.usuario_fem);
+                break;
+        }
     }
 
     public void jogar(String escolhaUsuario){
+
+        switch(escolhaUsuario){
+            case "pedra":
+                escolhausuario.setImageResource(R.drawable.pedra);
+                break;
+            case "papel":
+                escolhausuario.setImageResource(R.drawable.papel);
+                break;
+            case "tesoura":
+                escolhausuario.setImageResource(R.drawable.tesoura);
+                break;
+        }
+
         String[] opcoes = {"pedra", "papel", "tesoura"};
 
         int numero = new Random().nextInt(3);
@@ -44,13 +76,13 @@ public class MainActivity extends AppCompatActivity {
 
         switch (escolhaMaquina) {
             case "pedra":
-                maquina.setImageResource(R.drawable.pedra);
+                escolhamaquina.setImageResource(R.drawable.pedra);
                 break;
             case "papel":
-                maquina.setImageResource(R.drawable.papel);
+                escolhamaquina.setImageResource(R.drawable.papel);
                 break;
             case "tesoura":
-                maquina.setImageResource(R.drawable.tesoura);
+                escolhamaquina.setImageResource(R.drawable.tesoura);
                 break;
         }
 
