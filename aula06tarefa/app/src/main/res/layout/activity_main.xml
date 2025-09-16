@@ -1,0 +1,146 @@
+ <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/pet1"
+        android:layout_width="137dp"
+        android:layout_height="114dp"
+        app:srcCompat="@drawable/dog1"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="100dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="305dp"
+        android:text="Conhecer!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet5"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="155dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="100dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="305dp"
+        android:text="Conhecer!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet6"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="293dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="98dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="7dp"
+        android:text="Conhecer!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/pet4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/pet4"
+        android:layout_width="162dp"
+        android:layout_height="118dp"
+        app:srcCompat="@drawable/gato1"
+        tools:layout_editor_absoluteX="-36dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:text="Conhecer!"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <ImageView
+        android:id="@+id/pet5"
+        android:layout_width="118dp"
+        android:layout_height="95dp"
+        app:srcCompat="@drawable/gato2"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="97dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="19dp"
+        android:text="Conhecer!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/pet5"
+        app:layout_constraintTop_toBottomOf="@+id/pet2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="149dp" />
+
+    <ImageView
+        android:id="@+id/pet3"
+        android:layout_width="117dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/dog3"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <ImageView
+        android:id="@+id/pet6"
+        android:layout_width="100dp"
+        android:layout_height="98dp"
+        app:srcCompat="@drawable/gato3"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="95dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="305dp"
+        android:text="Conhecer!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet4"
+        app:layout_constraintVertical_bias="0.297"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/pet2"
+        android:layout_width="121dp"
+        android:layout_height="112dp"
+        app:srcCompat="@drawable/dog2"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="328dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/aguafina_script"
+        android:text="Little Last Pet Shop"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_secondary"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
