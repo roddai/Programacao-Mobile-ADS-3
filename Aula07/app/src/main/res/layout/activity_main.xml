@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -13,44 +12,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="JoKenPo"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
 
     <ImageView
         android:id="@+id/imgMaquina"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        tools:srcCompat="@drawable/maquina"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/maquina"
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
 
     <TextView
-        android:id="@+id/textResultado"
+        android:id="@+id/txtResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Resultado"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/imgMaquina"
-        android:textSize="30dp"
-        android:layout_marginTop="12dp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
 
     <ImageView
         android:id="@+id/imgPedra"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        app:srcCompat="@drawable/pedra"
-        app:layout_constraintTop_toBottomOf="@id/textResultado"
+        android:src="@drawable/pedra"
+        android:contentDescription="Pedra"
+        app:layout_constraintTop_toBottomOf="@id/txtResultado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/imgPapel"
-        android:layout_marginTop="12dp"
-        />
+        android:layout_marginTop="24dp" />
 
     <ImageView
         android:id="@+id/imgPapel"
@@ -58,10 +57,10 @@
         android:layout_height="80dp"
         android:src="@drawable/papel"
         android:contentDescription="Papel"
-        app:layout_constraintTop_toBottomOf="@id/textResultado"
+        app:layout_constraintTop_toBottomOf="@id/txtResultado"
         app:layout_constraintStart_toEndOf="@id/imgPedra"
         app:layout_constraintEnd_toStartOf="@id/imgTesoura"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="24dp" />
 
     <ImageView
         android:id="@+id/imgTesoura"
@@ -69,10 +68,9 @@
         android:layout_height="80dp"
         android:src="@drawable/tesoura"
         android:contentDescription="Tesoura"
-        app:layout_constraintTop_toBottomOf="@id/textResultado"
+        app:layout_constraintTop_toBottomOf="@id/txtResultado"
         app:layout_constraintStart_toEndOf="@id/imgPapel"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp"/>
-
+        android:layout_marginTop="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

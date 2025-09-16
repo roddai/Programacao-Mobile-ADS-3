@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.jokenpo"
-    compileSdk = 34
+    namespace = "com.example.a7teste"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.jokenpo"
+        applicationId = "com.example.a7teste"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
