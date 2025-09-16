@@ -22,4 +22,5 @@ dependencyResolutionManagement {
 rootProject.name = "project Aula 3"
 include(":app")
 include(":app")
+include(":app")
  
