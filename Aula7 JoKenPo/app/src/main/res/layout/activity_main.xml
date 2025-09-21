@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="361dp"
+        android:layout_height="52dp"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:text="Hello world garai!"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/ImgCPU"
+        android:layout_width="117dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="2dp"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/maquina" />
+
+    <TextView
+        android:id="@+id/TextoResultado"
+        android:layout_width="337dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="Resultado"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/TextoAnimado"
+        app:layout_constraintStart_toStartOf="@+id/TextoAnimado"
+        app:layout_constraintTop_toBottomOf="@+id/TextoAnimado" />
+
+    <TextView
+        android:id="@+id/TextoEscolha"
+        android:layout_width="142dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Escolha"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/TextoResultado"
+        tools:layout_editor_absoluteX="129dp" />
+
+    <TextView
+        android:id="@+id/textoEscolha"
+        android:layout_width="370dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="152dp"
+        android:gravity="center"
+        android:text=" Escolha seu personagem"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/TextoResultado"
+        tools:layout_editor_absoluteX="14dp" />
+
+    <TextView
+        android:id="@+id/TextoAnimado"
+        android:layout_width="255dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="119dp"
+        android:gravity="center"
+        android:text="ME ENFRENTE BAGUI QUE GIRA"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/Tesoura"
+        android:layout_width="111dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Pedra"
+        app:layout_constraintEnd_toEndOf="@+id/Pedra"
+        app:layout_constraintEnd_toStartOf="@+id/Pedra"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Pedra"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tesoura" />
+
+    <ImageView
+        android:id="@+id/Pedra"
+        android:layout_width="96dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="467dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Papel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Tesoura"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/pedra" />
+
+    <ImageView
+        android:id="@+id/ImgResultado"
+        android:layout_width="117dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="115dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ImgCPU"
+        app:layout_constraintStart_toEndOf="@+id/ImgCPU"
+        app:layout_constraintTop_toTopOf="@+id/ImgCPU"
+        app:srcCompat="@drawable/pedra" />
+
+    <ImageView
+        android:id="@+id/imgResultado"
+        android:layout_width="104dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="138dp"
+        app:layout_constraintStart_toEndOf="@+id/ImagemJogador"
+        app:layout_constraintTop_toBottomOf="@+id/TextoEscolha"
+        app:srcCompat="@drawable/pedra" />
+
+    <ImageView
+        android:id="@+id/Papel"
+        android:layout_width="107dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Pedra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Pedra"
+        app:layout_constraintTop_toTopOf="@+id/Pedra"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageView
+        android:id="@+id/ImagemJogador"
+        android:layout_width="107dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgResultado"
+        app:layout_constraintTop_toBottomOf="@+id/TextoEscolha"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <ImageView
+        android:id="@+id/motaro"
+        android:layout_width="114dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textoEscolha"
+        app:layout_constraintStart_toStartOf="@+id/textoEscolha"
+        app:layout_constraintTop_toBottomOf="@+id/textoEscolha"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/usuario_masc" />
+
+    <ImageView
+        android:id="@+id/patolino"
+        android:layout_width="136dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/motaro"
+        app:layout_constraintEnd_toEndOf="@+id/textoEscolha"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toEndOf="@+id/motaro"
+        app:layout_constraintTop_toTopOf="@+id/motaro"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/usuario_fem" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
