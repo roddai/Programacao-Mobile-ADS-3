@@ -3,8 +3,8 @@
 Este é o repositório da disciplina **Programação Mobile**.
 
 ## 👨‍💻 Desenvolvedor
-- Nome: Caio Dantas Farias
-- RA: 24026710
+- Nome: Rodrigo da Rosa
+- RA: xxxxxxxxxxxxxxxxxxx
 - Curso: ADS – 3º Semestre
 
 ## 📅 Data
