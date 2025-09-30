@@ -11,9 +11,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView imgmaquina, imgfe, imgpedra,imgtesoura,imgpapel,imgfeminino,masculino;
-    TextView txtresultado;
 
+  //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
