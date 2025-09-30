@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/TituloForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Formulário"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndof="parent"
+            app:layout_constraintStart_toStartof="parent"
+            app:layout_constraintStart_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/EditTextNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="127dp"
+            android:hint="Digite Seu Nome"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/TituloForm"
+            app:layout_constraintEnd_toEndof="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/TituloForm"
+            app:layout_constraintTop_toBottomOf="@+id/TituloForm"
+            app:layout_constraintTop_toBottomof="@id/TituloForm" />
+
+        <EditText
+            android:id="@+id/EditTextIdade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="127dp"
+            android:hint="Digite Sua Idade"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/EditTextNome"
+            app:layout_constraintEnd_toEndof="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/EditTextNome"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextNome"
+            app:layout_constraintTop_toBottomof="@id/TituloForm" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox2"
+            app:layout_constraintStart_toStartOf="@+id/checkBox2"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            app:layout_constraintEnd_toEndOf="@+id/EditTextIdade"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextIdade" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/checkBox"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox">
+
+            <RadioButton
+                android:id="@+id/RbSim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/RbNao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="14dp"
+            android:text="Selecione a Cor"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <Spinner
+            android:id="@+id/Spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avalie"
+            app:layout_constraintEnd_toEndOf="@+id/Spinner1"
+            app:layout_constraintStart_toStartOf="@+id/Spinner1"
+            app:layout_constraintTop_toBottomOf="@+id/Spinner1" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:numStars="6"
+            android:stepSize="0.1"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            app:layout_constraintEnd_toEndOf="@+id/EditTextNome"
+            app:layout_constraintStart_toStartOf="@+id/EditTextNome"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
