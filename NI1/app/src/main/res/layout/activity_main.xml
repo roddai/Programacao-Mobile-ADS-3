@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/questao1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Como você reage em ambientes sociais desconhecidos?"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <RadioButton
+        android:id="@+id/rbQ1A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Me sinto energizado e gosto de fazer novas conexões." />
+
+    <RadioButton
+        android:id="@+id/rbQ1B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fico um pouco desconfortável, mas tento interagir." />
+
+    <RadioButton
+        android:id="@+id/rbQ1C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prefiro observar ou ficar sozinho até me sentir mais à vontade." />

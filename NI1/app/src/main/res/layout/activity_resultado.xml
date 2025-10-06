@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titulo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/questao3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Como você lida com opiniões diferentes das suas?"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <RadioButton
+        android:id="@+id/rbQ3A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gosto de ouvir e entender outros pontos de vista." />
+
+    <RadioButton
+        android:id="@+id/rbQ3B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depende da situação, às vezes discuto, às vezes escuto." />
+
+    <RadioButton
+        android:id="@+id/rbQ3C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tenho dificuldade em aceitar opiniões que discordam da minha." />
+
+    <!-- AQUI vai o TextView do resultado -->
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado aparecerá aqui"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp" />
+
+</LinearLayout>
