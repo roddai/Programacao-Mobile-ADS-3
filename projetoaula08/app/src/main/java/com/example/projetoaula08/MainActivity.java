@@ -1,13 +1,11 @@
 package com.example.projetoaula08;
 
+import android.content.Intent; // Importação necessária
 import android.os.Bundle;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,11 +14,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
         Button btnProximo = findViewById(R.id.btnProximo);
         btnProximo.setOnClickListener(v -> {
-            Intent intent
+            Intent intent = new Intent(MainActivity.this, FormActivity.class);
+            startActivity(intent);
         });
-
-        };
     }
 }
