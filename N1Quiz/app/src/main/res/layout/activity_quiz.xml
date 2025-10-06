@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Guideline vertical para margem esquerda (10%) -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <!-- Guideline vertical para margem direita (90%) -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <!-- Pergunta 1 -->
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1. Como você reage em ambientes sociais desconhecidos?"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/bt_1_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="a) Me sinto energizado e gosto de fazer novas conexões."
+        app:layout_constraintTop_toBottomOf="@id/txt_1"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/bt_1_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="b) Fico um pouco desconfortável, mas tento interagir."
+        app:layout_constraintTop_toBottomOf="@id/bt_1_a"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/bt_1_c"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="c) Prefiro observar ou ficar sozinho até me sentir mais à vontade."
+        app:layout_constraintTop_toBottomOf="@id/bt_1_b"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="5dp" />
+
+    <!-- Pergunta 2 -->
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2. Quando você tem uma tarefa importante para fazer, o que costuma acontecer?"
+        app:layout_constraintTop_toBottomOf="@id/bt_1_c"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/bt_2_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="a) Planejo bem e sigo o plano."
+        app:layout_constraintTop_toBottomOf="@id/txt_2"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/bt_2_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="b) Tento organizar, mas às vezes me perco."
+        app:layout_constraintTop_toBottomOf="@id/bt_2_a"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/bt_2_c"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="c) Deixo para a última hora ou esqueço."
+        app:layout_constraintTop_toBottomOf="@id/bt_2_b"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="5dp" />
+
+    <!-- Pergunta 3 -->
+    <TextView
+        android:id="@+id/txt_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3. Como você lida com opiniões diferentes das suas?"
+        app:layout_constraintTop_toBottomOf="@id/bt_2_c"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/bt_3_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="a) Gosto de ouvir e entender outros pontos de vista."
+        app:layout_constraintTop_toBottomOf="@id/txt_3"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/bt_3_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="b) Depende da situação, às vezes discuto, às vezes escuto."
+        app:layout_constraintTop_toBottomOf="@id/bt_3_a"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/bt_3_c"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="c) Tenho dificuldade em aceitar opiniões que discordam da minha."
+        app:layout_constraintTop_toBottomOf="@id/bt_3_b"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="5dp" />
+    <Button
+        android:id="@+id/bt_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        app:layout_constraintTop_toBottomOf="@id/bt_3_c"
+        app:layout_constraintStart_toStartOf="@+id/guideline_start"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_end"
+        android:layout_marginTop="5dp"
+       />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
