@@ -6,4 +6,6 @@
     </style>
 
     <style name="Theme.Java_aula_mobile" parent="Base.Theme.Java_aula_mobile" />
+
+    <style name="Theme.Aula09Tarefa" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>

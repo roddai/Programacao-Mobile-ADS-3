@@ -19,7 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "java_aula_mobile"
-include(":app")
+rootProject.name = "Aula09Tarefa"
 include(":app")
  

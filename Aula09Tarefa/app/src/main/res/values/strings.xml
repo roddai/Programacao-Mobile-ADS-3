@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Aula09Tarefa</string>
+
+    <string-array name="locations_array">
+        <item>São Paulo</item>
+        <item>Rio de Janeiro</item>
+        <item>Porto Alegre</item>
+        <item>Belo Horizonte</item>
+        <item>Salvador</item>
+    </string-array>
+
+    <string-array name="event_types_array">
+        <item>Aniversário</item>
+        <item>Casamento</item>
+        <item>Corporativo</item>
+        <item>Outro</item>
+    </string-array>
+
+</resources>
