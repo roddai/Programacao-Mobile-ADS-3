@@ -3,8 +3,8 @@
 Este é o repositório da disciplina **Programação Mobile**.
 
 ## 👨‍💻 Desenvolvedor
-- Nome: Rodrigo da Rosa
-- RA: xxxxxxxxxxxxx
+- Nome: Cassio G. Gama
+- RA: 22023292
 - Curso: ADS – 3º Semestre
 
 ## 📅 Data
