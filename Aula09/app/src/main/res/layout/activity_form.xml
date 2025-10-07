@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/formTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de Evento"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Nome do evento -->
+        <EditText
+            android:id="@+id/eventName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:hint="Nome do Evento"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@id/formTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Local do evento Spinner -->
+        <Spinner
+            android:id="@+id/locationSpinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@id/eventName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Data do evento -->
+        <EditText
+            android:id="@+id/eventDate"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:hint="Data do Evento (ex: 10/11/2025)"
+            android:inputType="date"
+            app:layout_constraintTop_toBottomOf="@id/locationSpinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Tipo do evento Spinner -->
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toBottomOf="@id/eventDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Texto Comidas -->
+        <TextView
+            android:id="@+id/foodLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comidas:"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/typeSpinner"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- CheckBoxes comidas -->
+        <CheckBox
+            android:id="@+id/foodSalgados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salgados"
+            app:layout_constraintTop_toBottomOf="@id/foodLabel"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/foodDoces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doces"
+            app:layout_constraintTop_toBottomOf="@id/foodLabel"
+            app:layout_constraintStart_toEndOf="@id/foodSalgados"
+            android:layout_marginStart="16dp"/>
+
+        <CheckBox
+            android:id="@+id/foodChurrasco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Churrasco"
+            app:layout_constraintTop_toBottomOf="@id/foodLabel"
+            app:layout_constraintStart_toEndOf="@id/foodDoces"
+            android:layout_marginStart="16dp"/>
+
+        <CheckBox
+            android:id="@+id/foodNenhuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nenhuma"
+            app:layout_constraintTop_toBottomOf="@id/foodLabel"
+            app:layout_constraintStart_toEndOf="@id/foodChurrasco"
+            android:layout_marginStart="16dp"/>
+
+        <!-- Texto Bebidas -->
+        <TextView
+            android:id="@+id/drinkLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bebidas:"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/foodSalgados"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"/>
+
+        <!-- CheckBoxes bebidas -->
+        <CheckBox
+            android:id="@+id/drinkRefrigerantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refrigerantes"
+            app:layout_constraintTop_toBottomOf="@id/drinkLabel"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/drinkCervejas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cervejas"
+            app:layout_constraintTop_toBottomOf="@id/drinkLabel"
+            app:layout_constraintStart_toEndOf="@id/drinkRefrigerantes"
+            android:layout_marginStart="16dp"/>
+
+        <CheckBox
+            android:id="@+id/drinkVodkas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vodkas"
+            app:layout_constraintTop_toBottomOf="@id/drinkLabel"
+            app:layout_constraintStart_toEndOf="@id/drinkCervejas"
+            android:layout_marginStart="16dp"/>
+
+        <CheckBox
+            android:id="@+id/drinkNenhuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nenhuma"
+            app:layout_constraintTop_toBottomOf="@id/drinkLabel"
+            app:layout_constraintStart_toEndOf="@id/drinkVodkas"
+            android:layout_marginStart="16dp"/>
+
+        <!-- Texto convidados -->
+        <TextView
+            android:id="@+id/guestLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faixa de convidados:"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/drinkRefrigerantes"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"/>
+
+        <!-- RadioGroup convidados -->
+        <RadioGroup
+            android:id="@+id/guestGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/guestLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/guests50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Até 50 pessoas"/>
+
+            <RadioButton
+                android:id="@+id/guests100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="51 a 100 pessoas"/>
+
+            <RadioButton
+                android:id="@+id/guestsMais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mais de 100 pessoas"/>
+
+        </RadioGroup>
+
+        <!-- Comentário -->
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Comentário"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="5"
+            android:gravity="top"
+            app:layout_constraintTop_toBottomOf="@id/guestGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Botões -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            app:layout_constraintTop_toBottomOf="@id/comment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/nextButton"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Próximo"
+            app:layout_constraintTop_toBottomOf="@id/comment"
+            app:layout_constraintStart_toEndOf="@id/backButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
