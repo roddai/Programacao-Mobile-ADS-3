@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Aula06</string>
+    <string name="fecap_pet">FECAP PET</string>
+    <string name="cães">Cães</string>
+    <string name="dog1">Cachorro número 1</string>
+    <string name="button1_dog">Botão Cachorro número 1</string>
+    <string name="dog2">Cachorro número 2</string>
+    <string name="button2_dog">Botão Cachorro número 2</string>
+    <string name="dog3">Cachorro número 3</string>
+    <string name="button3_dog">Botão Cachorro número 3</string>
+    <string name="gatos">Gatos</string>
+    <string name="cat1">Gato número 1</string>
+    <string name="button4_cat">Botão Gato número 1</string>
+    <string name="cat2">Gato número 2</string>
+    <string name="button5_cat">Botão Gato número 2</string>
+    <string name="cat3">Gato número 3</string>
+    <string name="button6_cat">Botão Gato número 3</string>
+</resources>

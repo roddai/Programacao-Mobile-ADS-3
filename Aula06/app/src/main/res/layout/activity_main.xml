@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#676"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="5dp"
+    tools:layout_editor_absoluteY="-53dp">
+
+    <TextView
+        android:id="@+id/texto_fecap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/fecap_pet"
+        android:textColor="#30AB27"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/caes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/cães"
+        android:textColor="#FFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dog1"
+        android:layout_width="110dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/dog1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <ImageView
+        android:id="@+id/dog2"
+        android:layout_width="110dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/dog2"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <ImageView
+        android:id="@+id/dog3"
+        android:layout_width="110dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/dog3"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <TextView
+        android:id="@+id/gatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="@string/gatos"
+        android:textColor="#FFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cat1"
+        android:layout_width="110dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/cat1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <ImageView
+        android:id="@+id/cat2"
+        android:layout_width="110dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/cat2"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <ImageView
+        android:id="@+id/cat3"
+        android:layout_width="110dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/cat3"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
