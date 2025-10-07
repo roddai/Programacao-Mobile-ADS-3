@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string name="app_name">Aula09-Tarefa</string>
+        <string name="form_title">Cadastro de Evento</string>
+        <string name="label_nome_evento">Nome do Evento</string>
+        <string name="hint_nome_evento">Digite o nome</string>
+        <string name="label_local_evento">Local do Evento</string>
+        <string name="label_data_evento">Data do Evento (dd/mm/aaaa)</string>
+        <string name="hint_data_evento">Ex: 10/11/2025</string>
+        <string name="label_tipo_evento">Tipo do Evento</string>
+        <string name="label_comidas">Comidas Servidas</string>
+        <string name="opcao_salgados">Salgados</string>
+        <string name="opcao_doces">Doces</string>
+        <string name="opcao_churrasco">Churrasco</string>
+        <string name="opcao_nenhuma_comida">Nenhuma</string>
+        <string name="label_bebidas">Bebidas Servidas</string>
+        <string name="opcao_refri">Refrigerantes</string>
+        <string name="opcao_cerveja">Cervejas</string>
+        <string name="opcao_vodka">Vodkas</string>
+        <string name="opcao_nenhuma_bebida">Nenhuma</string>
+        <string name="label_faixa_convidados">Faixa de Convidados</string>
+        <string name="faixa_ate_50">Até 50 pessoas</string>
+        <string name="faixa_51_100">51 a 100 pessoas</string>
+        <string name="faixa_mais_100">Mais de 100 pessoas</string>
+        <string name="label_comentario">Comentário</string>
+        <string name="hint_comentario">Escreva seu comentário</string>
+        <string name="btn_voltar">Voltar</string>
+        <string name="btn_proximo">Próximo</string>
+    </resources>
+

@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.Aula09tarefa" parent="Theme.Material3.DayNight.NoActionBar">
+
+
+        <!-- Customize additional attributes if needed -->
+        <!-- Example: <item name="android:statusBarColor">@color/md_theme_primary</item> -->
+    </style>
+
+    <!-- Main theme for the app -->
+    <style name="Theme.Aula09tarefa" parent="Base.Theme.Aula09tarefa" />
+
+</resources>
