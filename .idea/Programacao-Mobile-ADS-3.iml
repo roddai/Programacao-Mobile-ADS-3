@@ -2,7 +2,33 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Aula06/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula06/.idea/caches" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula06/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula06/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula07/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula07/.idea/caches" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula07/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula5/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula5/.idea/caches" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula5/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula5/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula6/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula6/.idea/caches" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula6/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula6/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula7/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula7/.idea/caches" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula7/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula7/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Entrega07/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/Entrega07/.idea/caches" />
+      <excludeFolder url="file://$MODULE_DIR$/Entrega07/app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Quizinterativo/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/Quizinterativo/.idea/caches" />
+      <excludeFolder url="file://$MODULE_DIR$/Quizinterativo/app/build" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
