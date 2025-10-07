@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Locais do evento -->
+    <string-array name="locais_array">
+        <item>São Paulo</item>
+        <item>Rio de Janeiro</item>
+        <item>Porto Alegre</item>
+        <item>Belo Horizonte</item>
+        <item>Curitiba</item>
+        <item>Recife</item>
+    </string-array>
+
+    <!-- Tipos de evento -->
+    <string-array name="tipos_array">
+        <item>Aniversário</item>
+        <item>Casamento</item>
+        <item>Corporativo</item>
+        <item>Outro</item>
+    </string-array>
+
+</resources>

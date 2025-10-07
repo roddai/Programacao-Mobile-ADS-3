@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_form"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etNomeEvento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nome_evento"
+            android:inputType="textCapWords"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Spinner
+            android:id="@+id/spLocal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/etNomeEvento"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_data"
+            android:inputType="text"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/spLocal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Spinner
+            android:id="@+id/spTipo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/etData"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Comidas -->
+        <TextView
+            android:id="@+id/tvComidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_comidas"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/spTipo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbSalgados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salgados"
+            app:layout_constraintTop_toBottomOf="@id/tvComidas"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbDoces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doces"
+            app:layout_constraintTop_toBottomOf="@id/cbSalgados"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbChurrasco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Churrasco"
+            app:layout_constraintTop_toBottomOf="@id/cbDoces"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbComidaNenhuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nenhuma"
+            app:layout_constraintTop_toBottomOf="@id/cbChurrasco"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Bebidas -->
+        <TextView
+            android:id="@+id/tvBebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_bebidas"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/cbComidaNenhuma"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbRefri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refrigerantes"
+            app:layout_constraintTop_toBottomOf="@id/tvBebidas"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbCerveja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cervejas"
+            app:layout_constraintTop_toBottomOf="@id/cbRefri"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbVodka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vodkas"
+            app:layout_constraintTop_toBottomOf="@id/cbCerveja"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbBebidaNenhuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nenhuma"
+            app:layout_constraintTop_toBottomOf="@id/cbVodka"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Convidados -->
+        <TextView
+            android:id="@+id/tvConvidados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_convidados"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/cbBebidaNenhuma"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rgConvidados"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvConvidados"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <RadioButton
+                android:id="@+id/rbAte50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Até 50 pessoas" />
+
+            <RadioButton
+                android:id="@+id/rb51a100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="51 a 100 pessoas" />
+
+            <RadioButton
+                android:id="@+id/rbMais100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mais de 100 pessoas" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etComentario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_comentario"
+            android:minLines="3"
+            android:gravity="top|start"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/rgConvidados"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Botões -->
+        <Button
+            android:id="@+id/btnVoltarForm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/voltar"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etComentario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnProximo" />
+
+        <Button
+            android:id="@+id/btnProximo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/proximo"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etComentario"
+            app:layout_constraintStart_toEndOf="@id/btnVoltarForm"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

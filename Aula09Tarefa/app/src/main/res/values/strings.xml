@@ -1,3 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Aula09Tarefa</string>
+    <string name="app_name">Evento Social</string>
+
+    <!-- Tela Welcome -->
+    <string name="bem_vindo">Bem-vindo! Cadastre seu evento social.</string>
+    <string name="comecar">Começar</string>
+
+    <!-- Tela Form -->
+    <string name="titulo_form">Cadastro do Evento</string>
+    <string name="hint_nome_evento">Nome do evento</string>
+    <string name="hint_data">Data (ex: 10/11/2025)</string>
+    <string name="hint_comentario">Comentário / observações</string>
+    <string name="label_comidas">Comidas</string>
+    <string name="label_bebidas">Bebidas</string>
+    <string name="label_convidados">Faixa de convidados</string>
+    <string name="voltar">Voltar</string>
+    <string name="proximo">Próximo</string>
+
+    <!-- Tela Resumo -->
+    <string name="titulo_resumo">Resumo do Evento</string>
 </resources>

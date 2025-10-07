@@ -1,6 +1,5 @@
-package com.example.aula09tarefa;
+package com.example.eventosocial;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,31 +12,28 @@ public class SummaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_summary);
 
-        // Encontra os TextViews no layout
-        TextView tvEventName = findViewById(R.id.textViewEventNameValue);
-        TextView tvLocation = findViewById(R.id.textViewLocationValue);
-        TextView tvDate = findViewById(R.id.textViewDateValue);
-        TextView tvEventType = findViewById(R.id.textViewTypeValue);
-        TextView tvFoods = findViewById(R.id.textViewFoodsValue);
-        TextView tvDrinks = findViewById(R.id.textViewDrinksValue);
-        TextView tvGuests = findViewById(R.id.textViewGuestsValue);
-        TextView tvComment = findViewById(R.id.textViewCommentValue);
-        Button buttonBack = findViewById(R.id.buttonBackSummary);
+        TextView tvNome = findViewById(R.id.tvResumoNome);
+        TextView tvLocal = findViewById(R.id.tvResumoLocal);
+        TextView tvData = findViewById(R.id.tvResumoData);
+        TextView tvTipo = findViewById(R.id.tvResumoTipo);
+        TextView tvComidas = findViewById(R.id.tvResumoComidas);
+        TextView tvBebidas = findViewById(R.id.tvResumoBebidas);
+        TextView tvConvidados = findViewById(R.id.tvResumoConvidados);
+        TextView tvComentario = findViewById(R.id.tvResumoComentario);
 
-        // Pega a Intent que iniciou esta atividade
-        Intent intent = getIntent();
+        // Recupera extras
+        if (getIntent() != null) {
+            tvNome.setText(getIntent().getStringExtra("nome"));
+            tvLocal.setText(getIntent().getStringExtra("local"));
+            tvData.setText(getIntent().getStringExtra("data"));
+            tvTipo.setText(getIntent().getStringExtra("tipo"));
+            tvComidas.setText(getIntent().getStringExtra("comidas"));
+            tvBebidas.setText(getIntent().getStringExtra("bebidas"));
+            tvConvidados.setText(getIntent().getStringExtra("convidados"));
+            tvComentario.setText(getIntent().getStringExtra("comentario"));
+        }
 
-        // Extrai os dados da Intent e os exibe nos TextViews
-        tvEventName.setText(intent.getStringExtra("EVENT_NAME"));
-        tvLocation.setText(intent.getStringExtra("LOCATION"));
-        tvDate.setText(intent.getStringExtra("DATE"));
-        tvEventType.setText(intent.getStringExtra("EVENT_TYPE"));
-        tvFoods.setText(intent.getStringExtra("FOODS"));
-        tvDrinks.setText(intent.getStringExtra("DRINKS"));
-        tvGuests.setText(intent.getStringExtra("GUESTS"));
-        tvComment.setText(intent.getStringExtra("COMMENT"));
-
-        // Configura o botão Voltar para finalizar a atividade e retornar à tela de formulário
-        buttonBack.setOnClickListener(view -> finish());
+        Button btnVoltar = findViewById(R.id.btnVoltarResumo);
+        btnVoltar.setOnClickListener(v -> finish()); // volta para edição (FormActivity)
     }
 }

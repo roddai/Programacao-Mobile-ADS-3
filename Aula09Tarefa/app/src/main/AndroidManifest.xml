@@ -13,26 +13,21 @@
         android:theme="@style/Theme.Aula09Tarefa"
         tools:targetApi="31">
 
-        <!-- Tela de Boas-Vindas (Tela 1) - é a tela de início -->
+        <!-- Tela inicial (WelcomeActivity) -->
         <activity
             android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- Tela de Formulário (Tela 2) -->
-        <activity
-            android:name=".FormActivity"
-            android:exported="false" />
+        <!-- Formulário -->
+        <activity android:name=".FormActivity" />
 
-        <!-- Tela de Resumo (Tela 3) -->
-        <activity
-            android:name=".SummaryActivity"
-            android:exported="false" />
+        <!-- Resumo -->
+        <activity android:name=".SummaryActivity" />
 
     </application>
 
