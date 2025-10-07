@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de Evento"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Nome do Evento -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Evento:" />
+
+        <EditText
+            android:id="@+id/editEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Local -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local:" />
+
+        <Spinner
+            android:id="@+id/spinnerLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Data -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data (DD/MM/AAAA):" />
+
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Tipo de Evento -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Evento:" />
+
+        <Spinner
+            android:id="@+id/spinnerEventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Comidas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comidas:" />
+
+        <CheckBox
+            android:id="@+id/checkSalty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salgados" />
+
+        <CheckBox
+            android:id="@+id/checkSweets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doces" />
+
+        <CheckBox
+            android:id="@+id/checkBarbecue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Churrasco" />
+
+        <!-- Bebidas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bebidas:"
+            android:layout_marginTop="10dp" />
+
+        <CheckBox
+            android:id="@+id/checkSoda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refrigerantes" />
+
+        <CheckBox
+            android:id="@+id/checkBeer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cervejas" />
+
+        <CheckBox
+            android:id="@+id/checkVodka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vodkas" />
+
+        <!-- Convidados -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número de Convidados:"
+            android:layout_marginTop="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGuests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioUpTo50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Até 50 pessoas" />
+
+            <RadioButton
+                android:id="@+id/radio51to100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="51 a 100 pessoas" />
+
+            <RadioButton
+                android:id="@+id/radioOver100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mais de 100 pessoas" />
+        </RadioGroup>
+
+        <!-- Comentário -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comentário:"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/editComment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Botões -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Voltar"
+                android:layout_marginEnd="5dp" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Próximo"
+                android:layout_marginStart="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
